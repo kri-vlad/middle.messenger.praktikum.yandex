@@ -1,0 +1,27 @@
+.form__list {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 45px;
+  padding: 0;
+}
+
+.form__label {
+  display: block;
+}
+
+.form__input {
+  display: block;
+}
+
+.form__field:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.form__wrapper-submit {
+  margin-top: auto;
+  margin-bottom: 14px;
+}
+
+.form__btn-submit {
+  width: 100%;
+}

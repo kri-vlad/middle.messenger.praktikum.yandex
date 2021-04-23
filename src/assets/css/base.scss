@@ -1,0 +1,136 @@
+/* Базовые компоненты */
+.btn {
+  background: var(--primary-color);
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--white-color);
+  font-size: 13px;
+  border: none;
+  line-height: 37px;
+  transition: color 0.5s ease-out;
+}
+
+.link {
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: 500;
+  display: inline-block;
+  margin: 0 auto;
+  color: var(--primary-color);
+}
+
+.input {
+  display: block;
+  position: relative;
+  height: 52px;
+  width: 100%;
+  padding-top: 17px;
+}
+
+.input__label {
+  position: absolute;
+  left: 0;
+  top: 21px;
+  font-size: 13px;
+  line-height: 13px;
+  color: var(--grey-dark-color);
+  font-weight: 500;
+  opacity: 0;
+  transition:
+    top 0.7s ease,
+    font-size 0.7s ease,
+    line-height 0.7s ease;
+}
+
+.input__enter {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  height: 20px;
+  line-height: 13px;
+  color: var(--black-color);
+  font-size: 13px;
+  font-weight: 500;
+  padding-bottom: 7px;
+
+  &.error {
+    border-bottom-color: red;
+  }
+}
+
+.input__enter:focus {
+  outline: none;
+}
+
+.input__enter:focus + .input__label {
+  top: 0;
+  font-size: 9px;
+  line-height: 9px;
+  opacity: 1;
+}
+
+.input__enter::placeholder {
+  font-size: 13px;
+  line-height: 13px;
+  color: var(--grey-dark-color);
+  font-weight: 500;
+  opacity: 1;
+}
+
+.input__enter:focus::placeholder {
+  font-size: 0;
+}
+
+/*Выпадающее меню*/
+.dropdown {
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  font-size: 12px;
+  padding: 15px;
+  background: var(--white-color);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.14);
+  border-radius: 12px;
+  text-align: left;
+  position: absolute;
+}
+
+.dropdown__item {
+  padding-left: 37px;
+  line-height: 22px;
+  position: relative;
+  margin-bottom: 16px;
+  height: 22px;
+}
+
+.dropdown__item--photo-video {
+  background: url("../images/icon-media.svg") no-repeat center left;
+  background-size: 22px;
+}
+
+.dropdown__item--file {
+  background: url("../images/icon-file.svg") no-repeat center left;
+  background-size: 22px;
+}
+
+.dropdown__item--location {
+  background: url("../images/icon-location.svg") no-repeat center left;
+  background-size: 22px;
+}
+
+.dropdown__item--add-user {
+  background: url("../images/icon-add-plus.svg") no-repeat center left;
+  background-size: 22px;
+}
+
+.dropdown__item--delete-user {
+  background: url("../images/icon-close.svg") no-repeat center left;
+  background-size: 22px;
+}
+
+.dropdown__item:last-child {
+  margin-bottom: 0;
+}
