@@ -7,6 +7,8 @@
 - `npm run eslint` — запуск eslint
 - `npm run stylelint` — запуск stylelint
 
+- [Пуллреквест - второй спринт](https://github.com/kri-vlad/middle.messenger.praktikum.yandex/pull/1)
+
 ## **Ссылки**
 
 - [Просмотр сайта на Netlify](https://kind-jennings-ea346a.netlify.app)
