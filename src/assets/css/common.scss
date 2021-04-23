@@ -1,0 +1,49 @@
+:root {
+  --primary-color: #3369f3;
+  --primary-color-hover: #0b36a4;
+  --primary-color-active: #0b36a4;
+  --warning-color: #ff0000;
+  --warning-color-hover: #cc0000;
+  --warning-color-active: #cc0000;
+
+  --black-color: #1e1e1e;
+  --grey-dark-color: #999999;
+  --grey-light-color: #efefef;
+  --white-color: #ffffff;
+  --white-dark-color: #fbfbfb;
+  --blue-light-color: #e4edfd;
+
+  --primary-font: "Inter", "Arial", sans-serif;
+}
+/* stylelint-disable */
+#app,
+/* stylelint-enable */
+html,
+body,
+.router {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--primary-font);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
